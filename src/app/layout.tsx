@@ -168,7 +168,7 @@ export default function RootLayout({
         name: "Mənim şəkillərim necə qorunur və silinə bilirmi?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Bütün şəxsi portretləriniz AES-256 şifrələmə ilə qorunur və təhlükəsiz Cloudflare R2 yaddaşında saxlanılır. Siz istənilən vaxt şəkli sildikdə, o həm bazadan, həm də R2 bulud serverlərindən dərhal və birdəfəlik silinir.",
+          text: "Bütün şəxsi portretləriniz tam məxfi saxlanılır. Siz istənilən vaxt şəkli sildikdə, o serverlərdən dərhal və birdəfəlik silinir.",
         },
       },
       {

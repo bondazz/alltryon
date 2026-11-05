@@ -25,7 +25,7 @@ const FAQ_DATA: FaqItem[] = [
     id: "02",
     question: "How is biometric portrait privacy protected?",
     answer:
-      "All silhouette photography is encrypted with AES-256 protocols and stored inside private Cloudflare R2 vaults. We never sell data or train public AI models on your private portraits.",
+      "All silhouette photography is strictly confidential. We never sell user data or train public AI models on your private portraits. When you delete a photo, it is permanently removed immediately.",
   },
   {
     id: "03",

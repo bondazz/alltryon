@@ -237,12 +237,12 @@ export const HeroSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Pin 2: Top-Right (Ribbed Knit Tank with 4 Plus Crosses) */}
+          {/* Pin 2: Top-Right (Ribbed Knit Tank with 4 Plus Crosses - WHITE on dark background) */}
           <div className="hidden sm:flex absolute -right-4 lg:-right-8 top-32 z-50 items-center gap-3 bg-background/95 backdrop-blur-xl p-3 border border-border min-w-[200px] pointer-events-auto shadow-sm">
-            <PlusIcon className="absolute -top-2.5 -left-2.5 size-4 text-foreground/50" />
-            <PlusIcon className="absolute -top-2.5 -right-2.5 size-4 text-foreground/50" />
-            <PlusIcon className="absolute -bottom-2.5 -left-2.5 size-4 text-foreground/50" />
-            <PlusIcon className="absolute -bottom-2.5 -right-2.5 size-4 text-foreground/50" />
+            <PlusIcon className="absolute -top-2.5 -left-2.5 size-4 text-white drop-shadow" />
+            <PlusIcon className="absolute -top-2.5 -right-2.5 size-4 text-white drop-shadow" />
+            <PlusIcon className="absolute -bottom-2.5 -left-2.5 size-4 text-white drop-shadow" />
+            <PlusIcon className="absolute -bottom-2.5 -right-2.5 size-4 text-white drop-shadow" />
 
             <div className="relative w-11 h-11 bg-muted/40 overflow-hidden flex-shrink-0 border border-border">
               <Image
@@ -362,10 +362,10 @@ export const HeroSection: React.FC = () => {
             <GooglePlayBadge />
           </div>
 
-          {/* Security / Privacy Trust Marker */}
+          {/* Quality Trust Marker */}
           <div className="flex items-center justify-center gap-1.5 text-[11px] font-mono text-muted-foreground pt-1">
             <ShieldCheckIcon className="size-3.5 text-emerald-600" />
-            <span>Biometric AES-256 Vault Guarantee</span>
+            <span>100% Authentic Human Drape Guarantee</span>
           </div>
         </div>
       </motion.div>

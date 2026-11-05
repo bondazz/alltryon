@@ -88,7 +88,7 @@ export function StackedExperience() {
 						{/* Action & Metric */}
 						<div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-2">
 							<Button className="w-full sm:w-auto font-mono text-xs uppercase tracking-wider" asChild>
-								<a href="#download" className="flex items-center gap-2">
+								<a href="#pricing" className="flex items-center gap-2">
 									<span>Try On Your Silhouette</span>
 									<ArrowRight className="size-3.5" />
 								</a>
@@ -229,7 +229,7 @@ export function StackedExperience() {
 
 							<div className="text-muted-foreground flex items-center justify-center gap-x-2 text-xs pt-1">
 								<ShieldCheckIcon className="size-3.5 text-emerald-600" />
-								<span>Private AES-256 Cloudflare R2 vault • Zero public model training</span>
+								<span>Zero public model training • 100% Private Silhouette Processing</span>
 							</div>
 						</div>
 					</motion.div>
@@ -273,13 +273,13 @@ export function StackedExperience() {
 						{/* Action & Metric */}
 						<div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-2">
 							<Button className="w-full sm:w-auto font-mono text-xs uppercase tracking-wider" asChild>
-								<a href="#download" className="flex items-center gap-2">
-									<span>Download for iOS & Android</span>
+								<a href="#pricing" className="flex items-center gap-2">
+									<span>Explore Floating Overlay</span>
 									<ArrowRight className="size-3.5" />
 								</a>
 							</Button>
 							<div className="text-muted-foreground text-xs font-mono">
-								<span className="text-foreground font-bold">100%</span> private vault
+								<span className="text-foreground font-bold">100%</span> private processing
 							</div>
 						</div>
 					</motion.div>
@@ -341,7 +341,7 @@ export function StackedExperience() {
 						{/* Action & Metric */}
 						<div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-2">
 							<Button className="w-full sm:w-auto font-mono text-xs uppercase tracking-wider" asChild>
-								<a href="#download" className="flex items-center gap-2">
+								<a href="#pricing" className="flex items-center gap-2">
 									<span>Explore 3-Slot Engine</span>
 									<ArrowRight className="size-3.5" />
 								</a>
@@ -549,8 +549,8 @@ export function StackedExperience() {
 						{/* Action & Metric */}
 						<div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-2">
 							<Button className="w-full sm:w-auto font-mono text-xs uppercase tracking-wider" asChild>
-								<a href="#download" className="flex items-center gap-2">
-									<span>Get Started Free</span>
+								<a href="#pricing" className="flex items-center gap-2">
+									<span>View Pricing & Plans</span>
 									<ArrowRight className="size-3.5" />
 								</a>
 							</Button>

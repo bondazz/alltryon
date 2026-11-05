@@ -18,13 +18,16 @@ export const Navbar: React.FC = () => {
   ];
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 w-full pt-4 px-4 sm:px-8">
+    <header className="absolute top-0 left-0 right-0 z-50 w-full pt-5 px-4 sm:px-8">
       {/* =========================================================================
-          DESKTOP NAVBAR: 3 ARCHITECTURAL BLUEPRINT MODULES WITH PLUS CROSSES
+          DESKTOP NAVBAR:
+          - Logo is pinned DEAD CENTER (left-1/2 -translate-x-1/2) exactly on the 50% split!
+          - Left Menu and Right Menu sit on the exact same horizontal height & baseline!
+          - Right Menu features bright white corner Plus crosses for the dark background!
          ========================================================================= */}
-      <div className="hidden lg:flex items-center justify-between max-w-7xl mx-auto gap-4">
-        {/* Module 1: Left Menu Card */}
-        <div className="relative bg-background/90 backdrop-blur-md border border-border px-5 py-2.5 shadow-2xs flex items-center gap-6">
+      <div className="hidden lg:block relative w-full max-w-7xl mx-auto h-11">
+        {/* Module 1: Left Menu Card (on Ivory side) */}
+        <div className="absolute left-0 top-0 h-11 bg-background/95 backdrop-blur-md border border-border px-5 shadow-2xs flex items-center gap-6">
           <PlusIcon className="absolute -top-2.5 -left-2.5 size-4 text-foreground/50" />
           <PlusIcon className="absolute -top-2.5 -right-2.5 size-4 text-foreground/50" />
           <PlusIcon className="absolute -bottom-2.5 -left-2.5 size-4 text-foreground/50" />
@@ -53,32 +56,33 @@ export const Navbar: React.FC = () => {
           </a>
         </div>
 
-        {/* Module 2: Center Brand Logo Box (No zoom, absolute architectural stability) */}
-        <div className="relative bg-background/95 backdrop-blur-md border border-border px-6 py-2 shadow-2xs flex items-center justify-center">
+        {/* Module 2: Center Brand Logo Box (DEAD CENTER ON 50% SPLIT LINE) */}
+        <div className="absolute left-1/2 -translate-x-1/2 top-0 h-11 bg-background/95 backdrop-blur-md border border-border px-4 shadow-2xs flex items-center justify-center z-20">
           <PlusIcon className="absolute -top-2.5 -left-2.5 size-4 text-foreground/50" />
           <PlusIcon className="absolute -top-2.5 -right-2.5 size-4 text-foreground/50" />
           <PlusIcon className="absolute -bottom-2.5 -left-2.5 size-4 text-foreground/50" />
           <PlusIcon className="absolute -bottom-2.5 -right-2.5 size-4 text-foreground/50" />
 
-          <a href="#" className="flex items-center justify-center select-none" aria-label="alltryon home">
+          <a href="#" className="flex items-center justify-center h-full select-none" aria-label="alltryon home">
             <Image
               src="/assets/alltryon_brand_logo.png"
               alt="alltryon."
-              width={160}
-              height={40}
-              className="h-8 lg:h-9 w-auto object-contain transition-none pointer-events-auto"
+              width={180}
+              height={45}
+              className="h-8 w-auto object-contain transition-none pointer-events-auto"
               priority
             />
             <span className="sr-only">alltryon.</span>
           </a>
         </div>
 
-        {/* Module 3: Right Menu Card + App Download Action */}
-        <div className="relative bg-background/90 backdrop-blur-md border border-border px-5 py-2 shadow-2xs flex items-center gap-5">
-          <PlusIcon className="absolute -top-2.5 -left-2.5 size-4 text-foreground/50" />
-          <PlusIcon className="absolute -top-2.5 -right-2.5 size-4 text-foreground/50" />
-          <PlusIcon className="absolute -bottom-2.5 -left-2.5 size-4 text-foreground/50" />
-          <PlusIcon className="absolute -bottom-2.5 -right-2.5 size-4 text-foreground/50" />
+        {/* Module 3: Right Menu Card (on Dark Midnight side - WHITE PLUS CROSSES) */}
+        <div className="absolute right-0 top-0 h-11 bg-background/95 backdrop-blur-md border border-border px-5 shadow-2xs flex items-center gap-5">
+          {/* White Plus Crosses for crisp visibility against dark background */}
+          <PlusIcon className="absolute -top-2.5 -left-2.5 size-4 text-white drop-shadow" />
+          <PlusIcon className="absolute -top-2.5 -right-2.5 size-4 text-white drop-shadow" />
+          <PlusIcon className="absolute -bottom-2.5 -left-2.5 size-4 text-white drop-shadow" />
+          <PlusIcon className="absolute -bottom-2.5 -right-2.5 size-4 text-white drop-shadow" />
 
           <a
             href="#compatibility"
@@ -101,10 +105,10 @@ export const Navbar: React.FC = () => {
             FAQ
           </a>
 
-          <Button size="sm" className="h-8 px-4 text-xs font-mono uppercase tracking-wider ml-1" asChild>
-            <a href="#download" className="flex items-center gap-1.5">
-              <span>Get App</span>
-              <ArrowUpRight className="size-3.5" />
+          <Button size="sm" className="h-7 px-3.5 text-xs font-mono uppercase tracking-wider ml-1" asChild>
+            <a href="#pricing" className="flex items-center gap-1.5">
+              <span>Plans</span>
+              <ArrowUpRight className="size-3" />
             </a>
           </Button>
         </div>
@@ -132,7 +136,7 @@ export const Navbar: React.FC = () => {
 
         <div className="flex items-center gap-2">
           <Button size="sm" className="h-7 px-3 text-[11px] font-mono uppercase tracking-wider" asChild>
-            <a href="#download">Get App</a>
+            <a href="#pricing">Plans</a>
           </Button>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -164,8 +168,8 @@ export const Navbar: React.FC = () => {
           ))}
           <div className="pt-2 border-t border-border">
             <Button className="w-full text-xs font-mono uppercase tracking-wider" asChild>
-              <a href="#download" onClick={() => setMobileMenuOpen(false)}>
-                Download alltryon App
+              <a href="#pricing" onClick={() => setMobileMenuOpen(false)}>
+                View Pricing Plans
               </a>
             </Button>
           </div>

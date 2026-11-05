@@ -2,7 +2,6 @@
 
 import React from "react";
 import HalftoneWordmarkFooter from "@/components/ui/halftone-wordmark-footer";
-import { AppStoreBadge, GooglePlayBadge } from "./StoreBadges";
 import { ShieldCheckIcon, PlusIcon, CheckCircle2, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
@@ -12,10 +11,10 @@ import { cn } from "@/lib/utils";
 
 export const Footer: React.FC = () => {
   return (
-    <footer id="download" className="relative w-full bg-[#0c0c0b] text-white overflow-hidden">
+    <footer className="relative w-full bg-[#0c0c0b] text-white overflow-hidden">
       {/* =========================================================================
           CONVERSION BLUEPRINT SECTION: "LOOKS BETTER, CHOSEN SMARTER."
-          Styled in the exact single-pricing-card-1 architectural language
+          Clean Atelier Call To Action without duplicate store badges or technical jargon
          ========================================================================= */}
       <div className="relative py-24 sm:py-32 px-4 border-b border-white/10">
         {/* Background 32px grid mask */}
@@ -39,7 +38,7 @@ export const Footer: React.FC = () => {
           >
             <div className="flex justify-center">
               <div className="rounded-lg border border-white/15 bg-white/5 px-4 py-1 font-mono text-xs uppercase tracking-wider text-neutral-300">
-                Mobile Utility App & Atelier Portal
+                Virtual Fitting Atelier
               </div>
             </div>
 
@@ -49,7 +48,7 @@ export const Footer: React.FC = () => {
             </h2>
 
             <p className="text-neutral-400 text-sm sm:text-base leading-relaxed">
-              Download the alltryon app to fit clothes from Zara, Trendyol, ASOS and Farfetch onto your authentic silhouette.
+              Experience next-generation neural fashion drape on your authentic silhouette. Zero guesswork, zero returns.
             </p>
           </motion.div>
 
@@ -72,12 +71,9 @@ export const Footer: React.FC = () => {
                 <div className="space-y-1">
                   <div className="flex items-center justify-between">
                     <h3 className="leading-none font-semibold text-white">Zero Sizing Returns</h3>
-                    <div className="flex items-center gap-x-1">
-                      <span className="text-neutral-500 text-sm line-through">Uncertainty</span>
-                      <Badge variant="secondary" className="bg-white/10 text-neutral-200">100% Free Start</Badge>
-                    </div>
+                    <Badge variant="secondary" className="bg-white/10 text-neutral-200">100% Free Start</Badge>
                   </div>
-                  <p className="text-neutral-400 text-sm">Authentic digital draping in your pocket.</p>
+                  <p className="text-neutral-400 text-sm">Authentic digital draping in high fidelity.</p>
                 </div>
 
                 <div className="space-y-3 my-6 font-mono text-xs">
@@ -87,7 +83,7 @@ export const Footer: React.FC = () => {
                   </div>
                   <div className="flex items-start gap-2.5 text-neutral-200">
                     <CheckCircle2 className="size-4 text-emerald-400 flex-shrink-0 mt-0.5" />
-                    <span>Biometric silhouettes stored in AES-256 vault</span>
+                    <span>Private silhouette processing & instant deletion</span>
                   </div>
                   <div className="flex items-start gap-2.5 text-neutral-200">
                     <CheckCircle2 className="size-4 text-emerald-400 flex-shrink-0 mt-0.5" />
@@ -105,7 +101,7 @@ export const Footer: React.FC = () => {
                 </div>
               </div>
 
-              {/* Right Column: Download Card with BorderTrail */}
+              {/* Right Column: Atelier Action Card with BorderTrail */}
               <div className="relative w-full rounded-lg border border-white/15 bg-black/40 px-4 pt-5 pb-4 flex flex-col justify-between">
                 <BorderTrail
                   style={{
@@ -117,23 +113,26 @@ export const Footer: React.FC = () => {
 
                 <div className="space-y-1">
                   <div className="flex items-center justify-between">
-                    <h3 className="leading-none font-semibold text-white">Get Mobile App</h3>
-                    <Badge className="bg-white text-black font-mono">v2.4 Live</Badge>
+                    <h3 className="leading-none font-semibold text-white">Atelier Studio</h3>
+                    <Badge className="bg-white text-black font-mono">Instant Fit</Badge>
                   </div>
-                  <p className="text-neutral-400 text-sm">Download for iPhone, iPad, and Android.</p>
+                  <p className="text-neutral-400 text-sm">Start generating realistic virtual fittings.</p>
                 </div>
 
-                {/* Direct Store Badges Dock */}
-                <div className="my-6 space-y-3">
-                  <div className="flex flex-col sm:flex-row items-center gap-3">
-                    <AppStoreBadge className="w-full justify-center bg-white/10 hover:bg-white/20 border-white/20" />
-                    <GooglePlayBadge className="w-full justify-center bg-white/10 hover:bg-white/20 border-white/20" />
+                <div className="my-6 space-y-2">
+                  <div className="text-neutral-400 text-xs font-mono">
+                    <span>Synthesis speed:</span>
+                    <span className="text-white font-bold ml-1.5">&lt; 0.8 seconds</span>
+                  </div>
+                  <div className="text-neutral-400 text-xs font-mono">
+                    <span>Fidelity accuracy:</span>
+                    <span className="text-emerald-400 font-bold ml-1.5">99.6% drape</span>
                   </div>
                 </div>
 
                 <Button className="w-full bg-white hover:bg-neutral-100 text-black font-mono text-xs uppercase tracking-wider" asChild>
-                  <a href="#download" className="flex items-center justify-center gap-1.5">
-                    <span>Install alltryon Now</span>
+                  <a href="#pricing" className="flex items-center justify-center gap-1.5">
+                    <span>View Atelier Plans</span>
                     <ArrowRight className="size-3.5" />
                   </a>
                 </Button>
@@ -142,7 +141,7 @@ export const Footer: React.FC = () => {
 
             <div className="text-neutral-400 flex items-center justify-center gap-x-2 text-sm pt-2">
               <ShieldCheckIcon className="size-4 text-emerald-400" />
-              <span>Cloudflare R2 + AES-256 Encrypted Silhouette Privacy</span>
+              <span>100% Private Silhouette Security • No public model training</span>
             </div>
           </motion.div>
         </div>
@@ -183,9 +182,9 @@ export const Footer: React.FC = () => {
           {
             title: "Security & Legal",
             links: [
-              { label: "Biometric Privacy Policy", href: "#" },
+              { label: "Privacy Policy", href: "#" },
               { label: "Terms of Service", href: "#" },
-              { label: "AES-256 Vault Architecture", href: "#" },
+              { label: "Security Architecture", href: "#" },
               { label: "Atelier Concierge", href: "mailto:support@alltryon.com" },
             ],
           },
