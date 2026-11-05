@@ -105,8 +105,14 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/assets/logo.png",
-    apple: "/assets/logo.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 
