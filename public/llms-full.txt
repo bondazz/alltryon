@@ -1,0 +1,26 @@
+# ALLTRYON — Complete System Specification & Architecture
+
+## Product Summary
+ALLTRYON is a quiet-luxury virtual fashion atelier and neural fitting room designed to eliminate sizing guesswork and fashion e-commerce returns. Unlike cartoonish 3D avatar generators, ALLTRYON performs generative diffusion image-to-image neural transfers using high-attention reference architectures (`gpt-image-2.5-sunburst`), preserving human skin tone, natural pose, facial nuances, and the exact micro-textures of silk, wool, leather, denim, and cotton.
+
+## Core Features
+1. **Atelier Dual & Slot Fitting Studio**:
+   - Model Setup: Choose curated professional studio models or upload personal portraits.
+   - Modular Multi-Garment Stacking: Slot 1 (Primary Garment), Slot 2 (Coordinating Piece), Slot 3 (Layering/Accessories).
+   - High-Fidelity Result Presentation with full pinch-to-zoom and precision fabric inspection.
+
+2. **Floating Try-On Widget (Android & iOS Share Extension)**:
+   - Floating system bubble that hovers above apps like Trendyol, Zara, Mango, Instagram, H&M, and Farfetch.
+   - Captures product photos from screen or accepts native system "Share -> ALLTRYON" inputs.
+   - Automatically loads product textures into Personal Archive and opens the Atelier studio in less than 1.5 seconds.
+
+3. **Cloud Architecture & Privacy**:
+   - Primary Storage: Cloudflare R2 Object Storage with SigV4 signed access.
+   - Database: Supabase PostgreSQL with Row Level Security (RLS). Users only see their own photos.
+   - Deletion guarantee: Deleting a portrait or try-on result removes it both from the database and physically purges the image bytes from Cloudflare R2.
+
+## Official Download Badges
+- Apple App Store
+- Google Play Store
+- Direct Progressive Web App (PWA)
+

@@ -1,0 +1,22 @@
+# ALLTRYON (alltryon.com)
+> The Digital Haute-Couture AI Virtual Fitting Room. Looks better on you.
+
+## Overview
+ALLTRYON is an AI-powered virtual try-on application for iOS, Android, and Web that enables users to test any real clothing item on their authentic photo portrait with photorealistic precision.
+
+## Key Capabilities
+- **Neural Reference Preservation**: Maintains the user's authentic facial identity, skin tone, hair, proportions, and lighting while transferring the exact fabric weave, neckline, print, cut, and drape of any apparel.
+- **Floating Try-On Widget (Üzən Düymə)**: A persistent screen overlay for mobile devices that lets users capture screenshots or share products directly from Trendyol, Zara, ASOS, Instagram, or any e-commerce store straight into the fitting studio in 1 tap.
+- **Multi-Piece Wardrobe Styling**: Combine up to 3 separate apparel pieces (e.g. tops + bottoms + outerwear) in a single try-on session.
+- **Privacy First (AES-256-GCM & Cloudflare R2)**: Zero public photo exposure; private user data is encrypted and permanently deletable on demand with automatic 24-hour cleanup options.
+
+## Platforms
+- iOS (App Store)
+- Android (Google Play Store & Native APK)
+- Web (Interactive Atelier Studio at https://alltryon.com)
+
+## Contact & Links
+- Website: https://alltryon.com
+- Support: support@alltryon.com
+- Privacy: https://alltryon.com/privacy
+
